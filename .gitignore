@@ -1,0 +1,16 @@
+#roxygen2 generated files
+NAMESPACE
+*.Rd
+!*-package.Rd
+
+#temporary files
+*~
+*.swp
+
+#R session files
+.Rhistory
+.RData
+
+#R CMD build/check files
+/*.Rcheck/
+/*.tar.gz

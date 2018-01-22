@@ -1,0 +1,46 @@
+Package: talweg
+Title: Time-Series Samples Forecasted With Exogenous Variables
+Version: 0.3-0
+Description: Forecast a curve sampled within the day (seconds, minutes,
+    hours...), using past measured curves + past exogenous informations, which
+    could be some aggregated measure on the past curves, the weather... Main
+    starting point: computeForecast().
+Author: Benjamin Auder <Benjamin.Auder@math.u-psud.fr> [aut,cre],
+    Jean-Michel Poggi <Jean-Michel.Poggi@parisdescartes.fr> [ctb],
+    Bruno Portier <Bruno.Portier@insa-rouen.fr>, [ctb]
+Maintainer: Benjamin Auder <Benjamin.Auder@math.u-psud.fr>
+Depends:
+    R (>= 3.0),
+Imports:
+    R6,
+    methods,
+    MASS
+Suggests:
+    parallel,
+    devtools,
+    roxygen2,
+    testthat,
+    rainbow
+LazyData: yes
+URL: http://git.auder.net/?p=talweg.git
+License: MIT + file LICENSE
+RoxygenNote: 6.0.1
+Collate: 
+    'plot.R'
+    'computeError.R'
+    'computeForecast.R'
+    'J_Zero.R'
+    'J_Persistence.R'
+    'J_Neighbors.R'
+    'F_Zero.R'
+    'F_Persistence.R'
+    'F_Neighbors.R'
+    'F_Average.R'
+    'getData.R'
+    'utils.R'
+    'Forecaster.R'
+    'Forecast.R'
+    'Data.R'
+    'A_NAMESPACE.R'
+    'J_LastValue.R'
+    'sample_dataset.R'
